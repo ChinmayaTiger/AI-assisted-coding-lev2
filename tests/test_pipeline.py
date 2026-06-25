@@ -7,7 +7,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
-from src.index import (
+from src.pipeline import (
     generate_data_quality_report,
     clean_orders,
     build_customer_360,
@@ -161,7 +161,7 @@ def test_save_outputs_writes_files(tmp_path):
 
     # monkeypatch OUTPUT_DIR by temporarily changing environment via import reload
     from importlib import reload
-    import src.index as idx
+    import src.pipeline as idx
 
     original_output = idx.OUTPUT_DIR
     try:

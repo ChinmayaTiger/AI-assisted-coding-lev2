@@ -32,7 +32,7 @@ AI-assisted-coding-lev2
 │   └── data_quality_report.csv
 │
 ├── src
-│   ├── index.py
+│   ├── pipeline.py
 │   └── customer_360_app.py
 │
 ├── tests
@@ -87,13 +87,13 @@ py -m pip install -r requirements.txt
 The main data processing logic is available in:
 
 ```
-src/index.py
+src/pipeline.py
 ```
 
 Run:
 
 ```powershell
-py src/index.py
+py src/pipeline.py
 ```
 
 This generates output files inside:
