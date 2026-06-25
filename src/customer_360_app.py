@@ -84,3 +84,6 @@ def main():
         st.subheader("Risk Customer Summary")
         risk_count = int(filtered[filtered["risk_flag"] == True].shape[0])
         st.write(f"Total customers flagged as risk: {risk_count}")
+
+if __name__ == "__main__":
+    main()
