@@ -1,0 +1,11 @@
+dataset,check,count
+orders,total_rows,180
+orders,duplicate_order_id,2
+orders,missing_customer_id,1
+orders,invalid_order_amounts,4
+customers,total_rows,120
+customers,duplicate_customer_id,0
+customers,missing_customer_id,0
+tickets,total_rows,160
+tickets,missing_resolved_date,22
+tickets,invalid_satisfaction_score,1
